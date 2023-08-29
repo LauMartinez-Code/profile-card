@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    /* Foto de Mockup Photos https://unsplash.com/es/@mockup_photos */
+    background-image: url('https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Component profile-card */
+.profile-card {
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(5px) brightness(80%);
+    border-radius: 30px;
+    background: linear-gradient(100deg, rgba(0,0,0,.2), rgba(0,0,0,.2));
+    box-shadow: 0 0 25px 5px #301607;/*563C2C*/
+    overflow: hidden;
+}
+
+.card__header {
+    background-image: url('https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 35%;
+    position: relative;
+    border-bottom: 5px solid rgba(255, 255, 255, .5);
+}
+
+.card__image {
+    /* Use 1:1 aspect ratio img */
+    box-sizing: content-box;
+    width: 40%;
+    position: absolute;
+    top: 80px;
+    border-radius: 100%;
+    border: 5px solid rgba(255, 255, 255, .5);
+}
+
+.card__body {
+    margin-top: 75px;
+}
+
+.card__title {
+    font-size: xx-large;
+}
+
+.card__subtitle {
+    font-style: italic;
+}
+
+.card__description {
+    margin: 10px 0px;
+}
+
+.card__footer > h2 {
+    font-weight: 100;
+}
+
+.card__actions {
+    margin-top: 10px;
+}
+
+.card__actions a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.card__actions a:first-child {
+    margin-left: 15px;
+}
+
+.card__actions i {
+    color: white;
+    transition: all 500ms;
+}
+
+.card__actions i:hover {
+    color: rgb(112, 198, 255);
+    transform: scale(1.25);
+}
