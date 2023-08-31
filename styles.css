@@ -53,10 +53,13 @@ main {
     /* Use 1:1 aspect ratio img */
     box-sizing: content-box;
     width: 40%;
+    height: calc(400px * .4); /* same value as width */
     position: absolute;
     top: 80px;
     border-radius: 100%;
     border: 5px solid rgba(255, 255, 255, .5);
+    background: whitesmoke;
+    background-clip: padding-box;
 }
 
 .card__body {
