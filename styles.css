@@ -35,7 +35,7 @@ main {
     backdrop-filter: blur(5px) brightness(80%);
     border-radius: 30px;
     background: linear-gradient(100deg, rgba(0,0,0,.2), rgba(0,0,0,.2));
-    box-shadow: 0 0 25px 5px #301607;/*563C2C*/
+    box-shadow: 0 0 25px 5px #301607;
     overflow: hidden;
 }
 
